@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TrangChinh.master.cs" Inherits="TrangChinh" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Coffee_ThuyHa_TrangChinh</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+
+   
+</head>
+
+<body id="body">
+    <form id="form1" runat="server">
+    <div id="mainwap">
+       <div id="header"><img alt="" src="anh/banner.jpg" height="200" width="1000" /></div>
+        <div class ="left">
+            <ul>
+                <li> Quản Lí Bán Hàng 
+                            <ul>
+                                 <li> <a href="QuanLiBan.aspx"> Quản Lí Bàn  </a></li>
+                                <li> <a href="QuanLiThucDon.aspx"> Quản Lí Thực Đơn </a></li>
+                                <li> <a href="QuanLiLoaiMon.aspx"> Quản Lí Loại Món </a></li>
+                                 <li> <a href="HoaDon.aspx"> Hóa Đơn  </a></li>
+
+                            </ul>
+                    </li>
+                  <li> Quản Lí Kho   
+                            <ul>
+                                 <li> <a href="NhapNguyenLieu.aspx"> Nhập Nguyên Liệu  </a></li>
+                                 
+                                 
+
+                            </ul>
+                    </li>
+                 <li> Quản Lí Nhân Viên  
+                            <ul>
+                                 <li> <a href="HoSoNhanVien.aspx"> Hồ Sơ Nhân Viên  </a></li>
+                                <li> <a href="ChamCongNV.aspx"> Chấm Công Nhân Viên  </a></li>
+                                   <li> <a href="TinhLuong.aspx"> Tính Lương Nhân Viên   </a></li>
+
+                                                              
+                            </ul>
+                    </li>
+              
+                    <%--<li> <a href="">quan li b  </a></li>
+                    <li> <a href="">quan li c  </a></li>--%>    
+              </ul>  
+        </div>
+
+        <div class="right">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class ="clr"></div>
+        <div class ="footer">
+            <img alt="" src="anh/footer.jpg" /></div>
+
+    </div>
+    </form>
+</body>
+</html>
