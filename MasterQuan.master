@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterQuan.master.cs" Inherits="MasterQuan" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Cà Phê Thủy Hà </title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+ 
+</head>
+<body id="body">
+    <form id="form1" runat="server">
+    <div id="mainwap">
+       <div id="header"><img alt="" src="anh/banner.jpg" height="200" width="1000" /></div>
+        <div class ="left">
+            <ul>
+                <li> <a href="QuangCao.aspx">Quản Lí Bán Hàng </a>
+                            <ul>
+                                 <li> <a href="QuangCao.aspx"> Quản Lí Bàn  </a></li>
+                                <li> <a href="QuangCao.aspx"> Quản Lí Thực Đơn </a></li>
+                             
+                                <li> <a href="QuangCao.aspx"> Quản Lí Loại Món </a></li>
+                                  <li> <a href="QuangCao.aspx"> Hóa Đơn  </a></li>
+                            </ul>
+                    </li>
+                  <li> <a href="QuangCao.aspx">Quản Lí Kho   </a>
+                            <ul>
+                                 <li> <a href="QuangCao.aspx"> Nhập Nguyên Liệu  </a></li>
+                              
+                            </ul>
+                    </li>
+                 <li> <a href="QuangCao.aspx">Quản Lí Nhân Viên  </a>
+                            <ul>
+                                 <li> <a href="QuangCao.aspx"> Hồ Sơ Nhân Viên  </a></li>
+                                <li> <a href="QuangCao.aspx"> Chấm Công Nhân Viên  </a></li>
+                               
+                                
+                            </ul>
+                    </li>
+              
+                    <%--<li> <a href="">quan li b  </a></li>
+                    <li> <a href="">quan li c  </a></li>--%>    
+              </ul>  
+        </div>
+
+        <div class="right">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class ="clr"></div>
+        <div class ="footer">
+            <img alt="" src="anh/footer.jpg" /></div>
+
+    </div>
+    </form>
+</body>
+</html>
